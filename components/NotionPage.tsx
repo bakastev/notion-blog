@@ -105,12 +105,9 @@ const propertyLastEditedTimeValue = (
   defaultFn: () => React.ReactNode
 ) => {
   if (pageHeader && block?.last_edited_time) {
-    // Verwende toLocaleDateString, um das Datum im gewünschten Format anzuzeigen
-    return `Zuletzt aktualisiert: ${new Date(block.last_edited_time).toLocaleDateString('de-DE', {
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric'
-    })}`;
+    return `Last updated ${formatDate(block?.last_edited_time, {
+      month: 'long'
+    })}`
   }
 
   return defaultFn();
