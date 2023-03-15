@@ -15,6 +15,7 @@ interface SocialLink {
 
 const socialLinks: SocialLink[] = [
   
+  
   config.linkedin && {
     name: 'linkedin',
     href: `https://www.linkedin.com/in/${config.linkedin}`,
