@@ -7,6 +7,7 @@ import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+import { FaFacebookSquare } from '@react-icons/all-files/io5/FaFacebookSquare'
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
@@ -61,6 +62,19 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
+         {config.facebook && (
+          <a
+            className={styles.facebook}
+            href={`https://facebook.com`}
+            title={`Facebook`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaFacebookSquare />
+          </a>
+          
+        )}
+        
         {config.zhihu && (
           <a
             className={styles.zhihu}
