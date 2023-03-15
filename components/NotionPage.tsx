@@ -101,17 +101,12 @@ const Tweet = ({ id }: { id: string }) => {
 }
 
 const propertyLastEditedTimeValue = (
-  { block, pageHeader },
-  defaultFn: () => React.ReactNode
+{ block, pageHeader },
+defaultFn: () => React.ReactNode
 ) => {
-  if (pageHeader && block?.last_edited_time) {
-    return `Last updated ${formatDate(block?.last_edited_time, {
-      month: 'long'
-    })}`
-  }
-
-  return defaultFn();
-};
+if (pageHeader && block?.last_edited_time) {
+return Zuletzt aktualisiert am ${formatDate(block?.last_edited_time, { day: '2-digit', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric' }, 'de-DE')}
+}
 
 const propertyDateValue = (
   { data, schema, pageHeader },
