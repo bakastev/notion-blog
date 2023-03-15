@@ -7,7 +7,7 @@ import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-
+import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
@@ -49,6 +49,19 @@ export const FooterImpl: React.FC = () => {
         )}
       </div>
 
+      <div className={styles.social}>
+        {config.twitter && (
+          <a
+            className={styles.twitter}
+            href={`https://twitter.com/${config.twitter}`}
+            title={`Twitter @${config.twitter}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaTwitter />
+          </a>
+        )}
+        
         {config.mastodon && (
           <a
             className={styles.mastodon}
