@@ -97,6 +97,10 @@
   color: #5a4be1;
 }
 
+.facebook:hover {
+  color: #0066ff;
+}
+
 .zhihu:hover {
   color: #0066ff;
 }
