@@ -77,7 +77,7 @@ export const FooterImpl: React.FC = () => {
         {config.linkedin && (
           <a
             className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
+            href={`https://www.linkedin.com/in/steve-baka-185783184`}
             title={`LinkedIn ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
