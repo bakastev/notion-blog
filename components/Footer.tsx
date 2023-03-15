@@ -71,8 +71,7 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaFacebookSquare />
-          </a>
-          
+          </a>          
         )}
         
         {config.zhihu && (
@@ -84,8 +83,7 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaZhihu />
-          </a>
-          
+          </a>      
         )}
              
         {config.linkedin && (
