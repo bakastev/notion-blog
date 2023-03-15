@@ -65,9 +65,9 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
     )
     const publishedTime = getPageProperty<number>('Published', block, recordMap)
     const date = lastUpdatedTime
-      ? new Date(lastUpdatedTime)
+      ? new Date(lastUpdatedTime).toLocaleDateString('de-DE')
       : publishedTime
-      ? new Date(publishedTime)
+      ? new Date(publishedTime).toLocaleDateString('de-DE')
       : undefined
     const socialImageUrl = getSocialImageUrl(pageId)
 
