@@ -121,9 +121,9 @@ const propertyDateValue = (
     const publishDate = data?.[0]?.[1]?.[0]?.[1]?.start_date
 
     if (publishDate) {
-      return `${formatDate("de-DE" publishDate, {
+      return `publishDate, {
         month: 'long'
-      })}`
+      }`
     }
   }
 
