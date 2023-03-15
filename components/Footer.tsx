@@ -49,7 +49,7 @@ export const FooterImpl: React.FC = () => {
         )}
       </div>
 
-      <div 
+      <div className={styles.social}>
         {config.mastodon && (
           <a
             className={styles.mastodon}
