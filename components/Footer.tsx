@@ -61,9 +61,9 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.Facebook && (
+        {config.facebook && (
           <a
-            className={styles.zhihu}
+            className={styles.facebook}
             href={`https://facebook.com`}
             title={`Facebook @${config.facebook}`}
             target='_blank'
