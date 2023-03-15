@@ -121,9 +121,12 @@ const propertyDateValue = (
     const publishDate = data?.[0]?.[1]?.[0]?.[1]?.start_date
 
     if (publishDate) {
-      return `${formatDate(publishDate, {
-        month: 'long'
-      })}`
+      // Verwende toLocaleDateString, um das Datum im gewünschten Format anzuzeigen
+      return new Date(publishDate).toLocaleDateString('de-DE', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric'
+      });
     }
   }
 
