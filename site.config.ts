@@ -9,12 +9,12 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'Menschen.Buchen.Fotografen Erfolgsjournal',
+  domain: 'journal.menschen-buchen-fotografen.de',
+  author: 'Steve Baka',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Erfolgreich als Fotograf. Das Erfolgsjournal.',
 
   // social usernames (optional)
   twitter: 'transitive_bs',
