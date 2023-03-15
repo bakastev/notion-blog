@@ -113,8 +113,8 @@ const propertyLastEditedTimeValue = (
     })}`;
   }
 
-  return defaultFn()
-}
+  return defaultFn();
+};
 
 const propertyDateValue = (
   { data, schema, pageHeader },
