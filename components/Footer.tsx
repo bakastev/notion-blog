@@ -50,7 +50,6 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div 
-        
         {config.mastodon && (
           <a
             className={styles.mastodon}
