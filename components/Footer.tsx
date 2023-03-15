@@ -4,7 +4,7 @@ import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-import { FaFacebookSquare } from '@react-icons/all-files/fa/FaFacebookSquare'
+import { FaZhihu } from '@react-icons/all-files/fa/FaFacebookSquare'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 
@@ -61,11 +61,11 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.facebook && (
+        {config.zhihu && (
           <a
-            className={styles.facebook}
-            href={`https://facebook.com`}
-            title={`Facebook @${config.facebook}`}
+            className={styles.zhihu}
+            href={`https://zhihu.com/people/${config.zhihu}`}
+            title={`Zhihu @${config.zhihu}`}
             target='_blank'
             rel='noopener noreferrer'
           >
